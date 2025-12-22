@@ -1,6 +1,6 @@
 <div class="markdown-heading">
 	<h1 class="heading-element">
-		<strong>Release port</strong> 
+		<strong>allow port</strong> 
 	</h1>
 <a id="user-content-release-port" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#release-port"></a> 
 </div>
