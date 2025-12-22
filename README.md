@@ -126,7 +126,7 @@ replacement code
 	Set up domain name resolution for the intermediate server and the terminal server in advance.
 </p>
 <p style="text-indent:2em;">
-	1、Apply for an ：<a href="https://github.com/slobys/docker%E3%80%91">SSL certificate</a> 
+	1、Apply for an ：<a href="https://github.com/slobys/SSL-Renewal">SSL certificate</a> 
 </p>
 <p>
 	<br />
@@ -135,7 +135,7 @@ replacement code
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	2、Open Source Projects ：<a href="https://github.com/yosebyte/nodepass%E3%80%91">Nodepass</a> 
