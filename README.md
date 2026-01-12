@@ -1,3 +1,12 @@
+<p style="text-indent:2em;">
+	Download and install the SSH connection tool ：<a href="https://www.hostbuf.com/t/988.html">Finalshell</a> 
+</p>
+<p style="text-indent:2em;">
+	Minimum VPS configuration requirements:Server;1-core,1G,10TB,Debian system
+</p>
+<p style="text-indent:2em;">
+	First,update the Debian/Ubuntu system and install components.
+</p>
 <div class="markdown-heading">
 	<h1 class="heading-element">
 		<strong>allow port</strong> 
@@ -7,21 +16,16 @@
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw allow 80   #Very important</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw allow 443   #Very important</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">firewall-cmd --zone=public --add-port=Port number/tcp - Port number      #Release port1</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">iptables -A INPUT -p tcp --dport Port number -j ACCEPT     #Release port2</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw allow Port number     #Release port3</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>ufw allow 80    #Very important</code></pre>
+</code></pre>
+<pre class="notranslate"><code>ufw allow 443    #Very important</code></pre>
+</code></pre>
+<pre class="notranslate"><code>firewall-cmd --zone=public --add-port=Port number/tcp - Port number    #Release port1</code></pre>
+</code></pre>
+<pre class="notranslate"><code>iptables -A INPUT -p tcp --dport Port number -j ACCEPT    #Release port2</code></pre>
+</code></pre>
+<pre class="notranslate"><code>ufw allow Port number    #Release port3</code></pre>
 <p style="text-indent:2em;">
 	<br />
 </p>
@@ -34,15 +38,14 @@
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">systemctl stop firewalld.service    #Turn off the firewall1</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">service iptables stop   #Turn off the firewall2</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw disable    #Turn off the firewall3</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>systemctl stop firewalld.service    #Turn off the firewall1</code></pre>
+</code></pre>
+<pre class="notranslate"><code>service iptables stop    #Turn off the firewall2</code></pre>
+</code></pre>
+<pre class="notranslate"><code>ufw disable    #Turn off the firewall3</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y &amp;&amp; apt install curl sudo wget git -y    #Debian/Ubuntu system</code></pre>
 <p style="text-indent:2em;">
 	<br />
 </p>
@@ -57,60 +60,52 @@
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">Update the system</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt update -y &amp;&amp; apt install curl sudo wget git -y    #Debian/Ubuntu system</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">yum install screen   #centos system</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt-get install wget     #wget system</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>Update the system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y &amp;&amp; apt install curl sudo wget git -y    #Debian/Ubuntu system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>yum install screen    #centos system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt-get install wget    #wget system</code></pre>
 <p>
 	<br />
 </p>
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget -N --no-check-certificate href="https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz gzip -d gost-linux-amd64-2.11.0.gz     #Deploy one-click script midway</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh      #Deploy the final script code</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>wget -N --no-check-certificate href="https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz gzip -d gost-linux-amd64-2.11.0.gz     #Deploy one-click script midway</code></pre>
+</code></pre>
+<pre class="notranslate"><code>wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh      #Deploy the final script code</code></pre>
 <p style="text-indent:2em;">
 	The router client replaces the transfer machine IP address and port
 </p>
 <p style="text-indent:2em;">
-	mv gost-linux-amd64-2.11.0 gost      #Named gost
+	mv gost-linux-amd64-2.11.0 gost    #Named gost
 </p>
 <p style="text-indent:2em;">
-	chmod +x gost      #Add executable permissions to the gost file
+	chmod +x gost    #Add executable permissions to the gost file
 </p>
 <p style="text-indent:2em;">
 	./gost -L udp://:38420 -L tcp://:38420 -F 
 relay+tls://Terminal:33280 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;    
-#Midway replacement code
+	#IP address replacement
 </p>
 <p style="text-indent:2em;">
-	./gost -L relay+tls://:8888/To add the of the Terminal 
-server code:443 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;    #Terminal 
-replacement code
+	./gost -L relay+tls://:8888/Terminal IP address replacement:443 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;    
+	#Terminal IP address replacement
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">./gost.sh       #Management script commands</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>./gost.sh       #Management script commands</code></pre>
 <p style="text-indent:2em;">
 	<br />
 </p>
 <div class="markdown-heading">
 	<h1 class="heading-element">
-		<strong>Transfer midway One-click installation of Nodepass panel 2025</strong> 
+		<strong>Transfer midway One-click installation of Nodepass panel 2026</strong> 
 	</h1>
-<a id="user-content-transfer-midway-one-click-installation-of-nodepass-panel-2025" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#transfer-midway-one-click-installation-of-nodepass-panel-2025"></a> 
+<a id="user-content-transfer-midway-one-click-installation-of-nodepass-panel-2026" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#transfer-midway-one-click-installation-of-nodepass-panel-2026"></a> 
 </div>
 <br />
 <p style="text-indent:2em;">
@@ -134,14 +129,13 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
+</code></pre>
+<pre class="notranslate"><code>bash <(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</code></pre>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</span></span></pre>
+	2、Open Source Projects ：<a href="https://github.com/yosebyte/nodepass">Nodepass</a> 
 </p>
 <p style="text-indent:2em;">
-	2、Open Source Projects ：<a href="https://github.com/yosebyte/nodepass%E3%80%91">Nodepass</a> 
-</p>
-<p style="text-indent:2em;">
-	Nodepass Panel ：<a href="https://github.com/NodePassProject/npsh%E3%80%91">Project</a> 
+	Nodepass Panel ：<a href="https://github.com/NodePassProject/npsh">Project</a> 
 </p>
 <p style="text-indent:2em;">
 	A. Main program installation [Mid-range and terminal installation]
@@ -152,12 +146,10 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://run.nodepass.eu/np.sh)    #Deployment Commands-1</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/np.sh)    #Deployment Commands-2</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>bash <(wget -qO- https://run.nodepass.eu/np.sh)    #Deployment Commands-1</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash <(curl -sSL https://run.nodepass.eu/np.sh)    #Deployment Commands-2</code></pre>
 <p style="text-indent:2em;">
 	B. Deploy Nodepass Panel [Mid-range terminal installation]
 </p>
@@ -167,12 +159,10 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://run.nodepass.eu/dash.sh) install   #Deployment Commands-1</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/dash.sh) install   #Deployment Commands-2</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>bash <(wget -qO- https://run.nodepass.eu/dash.sh) install   #Deployment Commands-1</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash <(curl -sSL https://run.nodepass.eu/dash.sh) install   #Deployment Commands-2</code></pre>
 <p style="text-indent:2em;">
 	One-click installation script [ terminal installation selection]
 </p>
@@ -180,21 +170,18 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>reset password</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/dash.sh) resetpwd    #reset password</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>bash <(curl -sSL https://run.nodepass.eu/dash.sh) resetpwd    #reset password</code></pre>
 <p>
 	<br />
 </p>	
 <p style="text-indent:2em;">
 	<strong>terminal installation selection</strong>
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3X-UI installation panel</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)    #Sing-Box script</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>bash (curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3X-UI installation panel</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash (wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)    #Sing-Box script</code></pre>
 <p style="text-indent:2em;">
 	4、The router client replaces the transfer machine IP address and port
 </p>
@@ -203,19 +190,22 @@ replacement code
 </p>
 <div class="markdown-heading">
 	<h1 class="heading-element">
-		<strong>Midway one-click installation of Aurora Panel 2025</strong> 
+		<strong>Midway one-click installation of Aurora Panel 2026</strong> 
 	</h1>
-<a id="user-content-midway-one-click-installation-of-aurora-panel-2025" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#midway-one-click-installation-of-aurora-panel-2025"></a> 
+<a id="user-content-midway-one-click-installation-of-aurora-panel-2026" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#midway-one-click-installation-of-aurora-panel-2026"></a> 
 </div>
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
+</code></pre>
+<pre class="notranslate"><code>ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y &amp;&amp; apt install curl sudo wget git -y    #Debian/Ubuntu system</code></pre>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw disable    #Turn off the firewall</span></span></pre>
+	One-click installation panel
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)    #One-click installation of Aurora panel midway</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>bash (curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)    #One-click installation of Aurora panel midway</code></pre>
 <p style="text-indent:2em;">
 	The router client replaces the transfer machine IP address and port
 </p>
@@ -232,21 +222,16 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt update -y     #Update the system</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt-get install ca-certificates wget -y update-ca-certificates   #Update the system's root certificate</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget -O tcp.sh "https://github.com/ylx2016/Linux-NetSpeed/raw/master/tcp.sh" chmod +x tcp.sh ; ./tcp.sh    #Enable BBR acceleration</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script.sh)     #Trojan Panel Installation Panel</span></span></pre>
-</p>
- <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script_standalone.sh)     #Trojan Panel Installation Panel</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>apt update -y     #Update the system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt-get install ca-certificates wget -y update-ca-certificates   #Update the system's root certificate</code></pre>
+</code></pre>
+<pre class="notranslate"><code>wget -O tcp.sh "https://github.com/ylx2016/Linux-NetSpeed/raw/master/tcp.sh" chmod +x tcp.sh; ./tcp.sh    #Enable BBR acceleration</code></pre>
+</code></pre>
+<pre class="notranslate"><code>source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script.sh)     #Trojan Panel Installation Panel</code></pre>
+</code></pre>
+<pre class="notranslate"><code>source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script_standalone.sh)     #Trojan Panel Installation Panel</code></pre>
 <p style="text-indent:2em;">
 	Default login account: sysadmin Default login password: 123456
 </p>
@@ -262,15 +247,20 @@ replacement code
 	</h1>
 <a id="user-content-one-click-installation-of-sing-box-panel" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#one-click-installation-of-sing-box-panel"></a> 
 </div>
-<p style="text-indent:2em;">
-	<strong>The following command</strong> 
+	<p style="text-indent:2em;">
+	<strong>The following command</strong>
 </p>
+</code></pre>
+<pre class="notranslate"><code>ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y &amp;&amp; apt install curl sudo wget git -y    #Debian/Ubuntu system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash (curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)      #Apply for an SSL certificate with one click</code></pre>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)      #Apply for an SSL certificate with one click</span></span></pre>
+	One-click installation panel
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh)      #One-click installation of Sing-Box and Xray panels</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>bash (curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh)      #One-click installation of Sing-Box and Xray panels</code></pre>
 <p style="text-indent:2em;">
 </p>
 <p style="text-indent:2em;">
@@ -285,12 +275,10 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">sudo ufw disable    #Turn off the firewall</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)     #sb one-key script</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>sudo ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)     #sb one-key script</code></pre>
 <p style="text-indent:2em;">
 	<br />
 </p>
@@ -303,15 +291,12 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">sudo ufw disable    #Turn off the firewall</span></span></pre>
-</p>	
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt update -y    #Update system</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh     #Pure Version Hysteria2 One-Click Script</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>sudo ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y    #Update system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh    #Pure Version Hysteria2 One-Click Script</code></pre>
 <p style="text-indent:2em;">
 <br />
 </p>
@@ -327,15 +312,12 @@ replacement code
 </p>
 <p style="text-indent:2em;">
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw disable    #Turn off the firewall</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt update -y    #Update system</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/x-ui-yg/main/install.sh)       #Install x-ui-yg panel</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y    #Update system</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/x-ui-yg/main/install.sh)    #Install x-ui-yg panel</code></pre>
 <p style="text-indent:2em;">
 	<br />
 </p>
@@ -350,12 +332,10 @@ replacement code
 </p>
 <p style="text-indent:2em;">
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">ufw disable    #Turn off the firewall</span></span></pre>
-</p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls href="https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)      #Install x-ui panel</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>bash (curl -Ls href="https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)    #Install x-ui panel</code></pre>
 <p style="text-indent:2em;">
 	<br />
 </p>
@@ -369,27 +349,18 @@ replacement code
 	3X-UI open source project ：<a href="https://github.com/MHSanaei/3x-ui">address</a> 
 </p>
 <p style="text-indent:2em;">
-	Download and install the SSH connection tool ：<a href="https://www.hostbuf.com/t/988.html">Finalshell</a> 
-</p>
-<p style="text-indent:2em;">
-	Server: 1-core, 1G 4T Debian system
-</p>
-<p style="text-indent:2em;">
-	First, update the Debian/Ubuntu system and install components.
-</p>
-<p style="text-indent:2em;">
 	<strong>The following command</strong>
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt update -y &amp;&amp; apt install curl sudo wget git -y</span></span></pre>
-</p>
+</code></pre>
+<pre class="notranslate"><code>ufw disable    #Turn off the firewall</code></pre>
+</code></pre>
+<pre class="notranslate"><code>apt update -y &amp;&amp; apt install curl sudo wget git -y    #Debian/Ubuntu system</code></pre>
 <p style="text-indent:2em;">
 	One-click installation panel
 </p>
-<p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3x-ui panel</span></span></pre>
-</p>
-	<br />
+</code></pre>
+<pre class="notranslate"><code>bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3x-ui panel</code></pre>
+<br />
 <ol>
 	<li>
 		<p>
@@ -419,12 +390,8 @@ application to succeed).
 </p>
 <p style="text-indent:2em;">
 	④vless+tcp+tls
-</p>
-<ol>
-	<li>
-		Enable BBR
-	</li>
-</ol>
-<p>
+<p style="text-indent:2em;">
 	<br />
+<pre><span class="pl-c"><span class="pl-c">Server deployment complete, Enable BBR</span></span></pre>
+</p>
 </p>
