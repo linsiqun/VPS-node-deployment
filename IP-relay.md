@@ -325,10 +325,15 @@ relay+tls://Terminal:33280 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;
 </code></pre>
 <pre class="notranslate"><code>wget -O hy2.py https://raw.githubusercontent.com/seagullz4/hysteria2/main/hysteria2.py && chmod +x hy2.py && python3 hy2.py    #Hysteria2 Pure Version One-Click Script</code></pre>
 <p style="text-indent:2em;">
-	project hysteria2：<a href="https://github.com/seagullz4/hysteria2">project hysteria2</a> 
 </p>
 <p style="text-indent:2em;">
-	open source projects hysteria2 ：<a href="https://github.com/GeorgianaBlake/Hysteria2">open source projects hysteria2</a> 
+	hysteria2 ：
+</p>
+<p style="text-indent:2em;">
+<a href="https://github.com/seagullz4/hysteria2">project hysteria2</a> 
+</p>
+<p style="text-indent:2em;">
+<a href="https://github.com/GeorgianaBlake/Hysteria2">open source projects hysteria2</a> 
 </p>
 <p style="text-indent:2em;">
 <br />
