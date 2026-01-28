@@ -132,10 +132,17 @@ relay+tls://Terminal:33280 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;
 </code></pre>
 <pre class="notranslate"><code>bash <(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</code></pre>
 <p style="text-indent:2em;">
-	2、Open Source Projects ：<a href="https://github.com/NodePassProject/npsh">Project</a>
 </p>
 <p style="text-indent:2em;">
-	Nodepass Panel ：<a href="https://github.com/NodePassProject">Nodepass</a> 
+	2、Nodepass ：
+</p>
+<p style="text-indent:2em;">
+<a href="https://github.com/NodePassProject">Nodepass Panel</a> 
+</p>
+<p style="text-indent:2em;">
+	<a href="https://github.com/NodePassProject/npsh">Nodepass Open Source Projects</a>
+</p>
+<p style="text-indent:2em;">
 </p>
 <p style="text-indent:2em;">
 	A. Main program installation [Mid-range and terminal installation]
