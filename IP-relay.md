@@ -132,7 +132,7 @@ relay+tls://Terminal:33280 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;
 </code></pre>
 <pre class="notranslate"><code>bash <(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</code></pre>
 <p style="text-indent:2em;">
-	2、Open Source Projects ：<a href="https://github.com/yosebyte/nodepass">Nodepass</a> 
+	2、Open Source Projects ：<a href="https://github.com/NodePassProject">Nodepass</a> 
 </p>
 <p style="text-indent:2em;">
 	Nodepass Panel ：<a href="https://github.com/NodePassProject/npsh">Project</a> 
@@ -233,6 +233,9 @@ relay+tls://Terminal:33280 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;
 </code></pre>
 <pre class="notranslate"><code>source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script_standalone.sh)     #Trojan Panel Installation Panel</code></pre>
 <p style="text-indent:2em;">
+<br />
+</p>
+<p style="text-indent:2em;">
 	Default login account: sysadmin Default login password: 123456
 </p>
 <p style="text-indent:2em;">
@@ -296,10 +299,31 @@ relay+tls://Terminal:33280 &gt;&gt; /dev/null 2&gt;&amp;1 &amp;
 </code></pre>
 <pre class="notranslate"><code>apt update -y    #Update system</code></pre>
 <p style="text-indent:2em;">
-	One-click installation script
+	hysteria2 executes the dependency installation (please execute the dependency installation once before running the installation script)
 </p>
 </code></pre>
-<pre class="notranslate"><code>wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh    #Pure Version Hysteria2 One-Click Script</code></pre>
+<pre class="notranslate"><code>wget -O phy2.sh https://raw.githubusercontent.com/seagullz4/hysteria2/main/phy2.sh && chmod +x phy2.sh && bash phy2.sh    #Hysteria2 installation dependencies</code></pre>
+<p style="text-indent:2em;">
+	Hysteria2 One-Click Deployment Script
+</p>
+</code></pre>
+<pre class="notranslate"><code>bash <(curl -Lso- https://raw.githubusercontent.com/GeorgianaBlake/Hysteria2/refs/heads/main/install.sh)    #Hysteria2 One-Click Deployment Script</code></pre>
+<p style="text-indent:2em;">
+	Hysteria2 Shell Version One-Click Script
+</p>
+</code></pre>
+<pre class="notranslate"><code>wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh    #Hysteria2 Shell Version One-Click Script</code></pre>
+<p style="text-indent:2em;">
+	Hysteria2 Pure Version One-Click Script
+</p>
+</code></pre>
+<pre class="notranslate"><code>wget -O hy2.py https://raw.githubusercontent.com/seagullz4/hysteria2/main/hysteria2.py && chmod +x hy2.py && python3 hy2.py    #Hysteria2 Pure Version One-Click Script</code></pre>
+<p style="text-indent:2em;">
+	project hysteria2：<a href="https://github.com/seagullz4/hysteria2">project hysteria2</a> 
+</p>
+<p style="text-indent:2em;">
+	open source projects hysteria2 ：<a href="https://github.com/GeorgianaBlake/Hysteria2">open source projects hysteria2</a> 
+</p>
 <p style="text-indent:2em;">
 <br />
 </p>
